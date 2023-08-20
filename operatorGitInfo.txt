@@ -15,3 +15,5 @@ git commit -m "提交注释" ; 退出vim 编辑器 ， esc 键，冒号，输入
 
 版本回退
 git reset --hard HEAD^^ ; HEAD~2 
+
+git reflog    git 所有操作记录查询
