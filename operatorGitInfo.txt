@@ -11,4 +11,7 @@ git 暂存区
 	git add .   把当前目录下的所有文件添加到暂存区
 
 提交到master 分支
-git commit -m "提交注释"
+git commit -m "提交注释" ; 退出vim 编辑器 ， esc 键，冒号，输入wq 
+
+版本回退
+git reset --hard HEAD^^ ; HEAD~2 
