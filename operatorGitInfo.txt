@@ -14,6 +14,19 @@ git 暂存区
 git commit -m "提交注释" ; 退出vim 编辑器 ， esc 键，冒号，输入wq 
 
 版本回退
-git reset --hard HEAD^^ ; HEAD~2 
+git reflog    git 所有操作记录查询，唯一识别ID的前7位
 
-git reflog    git 所有操作记录查询
+git reset --hard HEAD^^ ; HEAD~2; 唯一识别ID的前7位
+直接移动指针，不留下log记录
+
+git reset --soft  唯一识别ID的前7位     从历史区回到暂存区，接着可以直接执行 git commit -m '新注释'
+
+git revert 新增一个指针，留下log记录
+
+
+创建分支
+git branch  /*分支名*/  不加分支名查看分支
+git checkout  /*分支名*/  切换分支 
+git merge /*分支名*/  合并分支到主分支
+git branch -d /*分支名*/ 删除分支 
+
